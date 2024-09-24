@@ -166,3 +166,10 @@ def deleteMessage(request, pk):
         return HttpResponse('You are not allowed here!')
 
     return render(request, 'base/delete.html', {'obj':message})
+
+@login_required(login_url='/login')
+def updateUser(request):
+
+     
+
+    return render(request, 'base/update-user.html', context)
